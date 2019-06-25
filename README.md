@@ -18,9 +18,21 @@ nano .bitcoin/bitcoin.conf
 ```bitcoind```
 
 ### watch blocks syncing process
-```watch -n1 bitcoin-cli getblockcount```
+```
+watch -n1 bitcoin-cli getblockcount
+```
 or:
 ```
 apt-get install jq bc
 watch -n1 echo "$(printf "%.2f" $(echo "100 * $(bitcoin-cli getblockchaininfo | jq '.verificationprogress')" | bc))%   blockcount: $(bitcoin-cli getblockcount)"
+```
+
+## installing bitcoin explorer (optional)
+```
+apt-get install git nodejs npm
+npm install -g n
+n stable
+git clone https://github.com/bitpay/insight.git && cd insight
+npm i
+...
 ```
