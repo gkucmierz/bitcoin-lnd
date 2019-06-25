@@ -12,6 +12,8 @@ sudo apt-get install bitcoin-qt bitcoind
 ```
 apt-get install nano
 nano .bitcoin/bitcoin.conf
+contab -e
+* * * * * bitcoind
 ```
 
 ## running bitcoin node
@@ -32,7 +34,7 @@ watch -n1 echo "$(printf "%.2f" $(echo "100 * $(bitcoin-cli getblockchaininfo | 
 apt-get install git nodejs npm
 npm install -g n
 n stable
-git clone https://github.com/bitpay/insight.git && cd insight
+git clone https://github.com/bitpay/bitcore.git && cd bitcore
 npm i
 ...
 ```
