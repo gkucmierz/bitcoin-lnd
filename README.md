@@ -16,3 +16,6 @@ nano .bitcoin/bitcoin.conf
 
 ## running bitcoin node
 ```bitcoind```
+
+### watch blocks syncing process
+```watch -n1 bitcoin-cli getblockcount```
