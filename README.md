@@ -11,6 +11,7 @@ sudo apt-get install bitcoin-qt bitcoind
 ## config bitcoin
 ```
 apt-get install nano
+mkdir .bitcoin
 nano .bitcoin/bitcoin.conf
 contab -e
 * * * * * bitcoind
